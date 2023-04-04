@@ -4,7 +4,7 @@ int main(){
     int f,m,l;
     cnt=0;
     scanf("%d",&N);
-    while(cnt<=N){
+    while(cnt<N){
         cnt++;
         scanf("%d",&temp);
         if(cnt==1){
@@ -17,4 +17,5 @@ int main(){
             l=temp;
         }
     }
+    printf("%d %d %d",f,m,l);
 }
