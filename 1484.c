@@ -10,19 +10,19 @@ int main(){
     t=0; // 시작점 (위쪽)
 
     while(num<n*m){
-        for(i=l;(i<=r)&&(num<=n*m);i++){
+        for(i=l;(i<=r)&&(num<n*m);i++){
             arr[t][i]=++num;
         }
         t++;
-        for(i=t;(i<=b)&&(num<=n*m);i++){
+        for(i=t;(i<=b)&&(num<n*m);i++){
             arr[i][r]=++num;
         }
         r--;
-        for(i=r;(i>=l)&&(num<=n*m);i--){
+        for(i=r;(i>=l)&&(num<n*m);i--){
             arr[b][i]=++num;
         }
         b--;
-        for(i=b;(i>=t)&&(num<=n*m);i--){
+        for(i=b;(i>=t)&&(num<n*m);i--){
             arr[i][l]=++num;
         }
         l++;
